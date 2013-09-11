@@ -1,0 +1,160 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Daniel Keresteci</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+        <style type="text/css">
+            #icon{
+                height: 32px;
+                width: 32px;
+                opacity: 1;
+            }
+
+            #icon:hover{
+                opacity: 1;
+                border-color: #0088cc;
+              -webkit-box-shadow: 0 1px 1em rgba(0, 105, 214, 0.25);
+              -moz-box-shadow: 0 1px 1em rgba(0, 105, 214, 0.25);
+              box-shadow: 0 1px 1em rgba(0, 105, 214, 0.25);
+            }
+
+            .tabs-left > .nav-tabs{
+                margin-right: 0px;
+                width: 200px;
+
+            }
+            .nav-tabs > li > a {
+
+                line-height: 60px;
+                font-size: 20px;
+                padding-left: 20px;
+            }
+
+            .nav-tabs > li > a > #mytabs {
+
+                padding-left: 20px;
+            }
+            .tab-content{
+                
+                border-top: 1px solid rgb(238, 238, 238);
+                border-right: 1px solid rgb(238, 238, 238);
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            .tab-content > .tab-pane {
+
+                margin-left: 19px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div style="height: 200px; background-color: white; boarder: 0px;">
+
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="span7">
+                    <div class="hero-unit">
+                        <h1>Daniel Keresteci.</h1>
+                        <p>This is my personal page...clearly it needs some work <i class="icon-thumbs-up"></i></p>
+                    </div>
+                </div>
+                <div class="span5">
+                    <div class="row">
+                        <div class="span3">
+                            <ul class="thumbnails">
+                                <li>
+                                    <a href="#" class="thumbnail"><img src="DanielatOsheaga.jpg" style="height: 180px"></a>
+                                </li>   
+
+                            </ul>
+                            
+                        </div>
+                        <div class="span2">
+                            <div class="row">
+                                <h3 style="line-height: 0px; padding-bottom: 10px;">Links.</h3>
+                            </div>
+                            <div class="row">
+                                <a href="https://www.facebook.com/dkeresteci"><img id="icon" src="http://aslstem.cs.washington.edu/images/fbIcon.png"></a>
+                                
+                            </div>
+                            <div class="row">
+                                <a href="https://twitter.com/dkeresteci"><img id="icon" src="http://coffman.house.gov/images/stories/twitter-icon.png"></a>
+                            </div>
+                            <div class="row">
+                                <a href="https://plus.google.com/u/0/110576915048553103841/"><img id="icon" src="http://jeetworks.org/sites/default/files/icons/google-plus.png"></a>
+                            </div>
+                            <div class="row">
+                                <a href="https://foursquare.com/dkeresteci"><img id="icon" src="http://static.filehorse.com/icons-web/social-networks/foursquare-icon-32.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- First Container-->
+        </div> <!-- End of First Container -->
+
+     <div class="container">
+            
+                
+                    <div class="tabbable tabs-left">
+                        <ul class="nav nav-tabs nav-stacked">
+                            <li class="active"><a href="#about" data-toggle="tab"><i class="icon-play"></i><span id="mytabs">  About</span></a></li>
+                            <li><a href="#info" data-toggle="tab"><i class="icon-play"></i> <span id="mytabs"> Info</span></a></li>
+                            <li><a href="#projects" data-toggle="tab"><i class="icon-play"></i><span id="mytabs">  Projects</span></a></li>
+                            <li><a href="#photos" data-toggle="tab"><i class="icon-play"></i><span id="mytabs">  Photos</a></span></li>
+                            <li><a href="#contact" data-toggle="tab"><i class="icon-play"></i><span id="mytabs">  Contact</a></span></li>
+                        </ul>
+                    
+             
+                
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="about">
+                            <p>This is the About text</p>
+                        </div>
+                        <div class="tab-pane" id="info">
+                            <p>This is the Info text</p>
+                        </div>
+                        <div class="tab-pane" id="projects">
+                            <p>This is the Projects text</p>
+                        </div>
+                        <div class="tab-pane" id="photos">
+                            <p>This is the Photos text</p>
+                        </div>
+                        <div class="tab-pane" id="contact">
+                            <p>This is the Contact text</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            
+        </div>
+
+        <p id="page_age" style="font-style: italic; text-align: center;"></p>
+        
+        <script type="text/javascript">
+            var startDate = new Date(2013, 07, 12, 0 , 0, 0);
+            var td= new Date();
+
+            //var dif = td.getUTCDate() - startDate.getUTCDate();
+            var one_day_epoch = 24*60*60*1000 ;
+            var dif = td - startDate;
+            var dif_days = Math.floor(dif/one_day_epoch);
+            document.getElementById("page_age").innerHTML="It has been " + dif_days + " days since this page was created";
+
+            //document.write("It has been " + dif + " days since this page was created")
+        
+        </script>
+        
+
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+    </html>
